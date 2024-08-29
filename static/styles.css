@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    background: rgb(240, 237, 237) url('static/images/cat_dog.jpeg') center / cover no-repeat;
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: -100px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: blue;
+    margin-top: 10px;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column {
+    margin: 1rem;
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .pred_img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .result {
+    font-size: 2.5rem;
+  }
+  
+  .label {
+    font-weight: bold;
+    color:green;
+
+  }
+  
+  .confidence {
+    font-weight: bold;
+    color: cyan;
+  }
+  
+  .button {
+    font-size: 1.5rem;
+    background-color:blue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 84px;
+  }.button:hover{
+    opacity: 0.8;
+  }
+  
+  .upload-form {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 100px;
+    width: 300px;
+    margin-top: 390px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-cta {
+    display: inline-block;
+    background-color:black;
+    color: white;
+    padding: 0.7rem;
+
+    /* width: 150px; */
+    cursor: pointer;
+   
+  }
+  
+  .file-name {
+    margin-left: 1rem;
+  
+  }
+
+  .file-text{
+    display: flex;
+    /* width: 300px; */
+    align-items: center;
+    /* margin-top: 550px; */
+    color:red
+  }
+ 
+  

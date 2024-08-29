@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog and Cat Classifier with Transfer Learning</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+      .hero {
+        background: black url('static/images/cat_dog.jpeg') center / cover no-repeat;
+      }
+      .notification {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <h1 class="title">Dog & Cat Classifier</h1>
+        {% if error %}
+          <div class="notification">
+            <button class="delete" onclick="this.parentElement.style.display='none';"></button>
+            {{ error }}
+          </div>
+        {% endif %}
+      </div>
+      <section class="section">
+        <div class="container1">
+          <form action="/classify" method="post" enctype="multipart/form-data" class="upload-form">
+            <div class="file">
+              <label class="file-label">
+                <div class="file-text">
+                  <input class="file-input" type="file" id="image" name="image">
+                  <div class="div1">
+                    <span class="file-cta">
+                      <span class="file-label">Upload an image</span>
+                    </span>
+                  </div>
+                  <div class="div2">
+                    <span class="file-name" id="file-name">No file chosen</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <br>
+            <input type="submit" value="Classify" class="button" id="classify_button">
+          </form>
+        </div>
+      </section>
+    </section>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
