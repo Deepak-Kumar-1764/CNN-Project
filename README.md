@@ -1,4 +1,4 @@
-# Dog and Cat Classifier with Transfer Learning
+# Dog and Cat Classifier with Deep Learning
 
 This project is a web application developed using Flask and TensorFlow that classifies images as either dogs or cats using a pre-trained convolutional neural network (CNN) model.
 
